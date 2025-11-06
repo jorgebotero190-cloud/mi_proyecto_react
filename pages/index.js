@@ -2,12 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Saludo from "./Componetes/Saludos-react";
-import Conteo from "./Componetes/Notas";
-import ParesImpares from "./Componetes/Pares_he_impares";
-import VerificarParImpar from "./Componetes/Verificador";
-import Promedio from "./Componetes/Notas";
-
+import Calculator from "./features/calculator";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -40,10 +35,7 @@ export default function Home() {
             priority
           />
         
-          <Saludo /><br/>
-          <Promedio/><br/>
-          <ParesImpares/><br/>
-          <VerificarParImpar /><br/>
+    <Calculator />
  
         
 
